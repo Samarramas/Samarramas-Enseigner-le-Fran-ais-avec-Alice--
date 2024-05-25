@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseignement de la Langue Française</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .video {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .video iframe {
+            flex: 1 1 calc(33% - 1rem);
+            min-width: 300px;
+            height: 200px;
+        }
+        .posts, .exercises, .exams {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .post, .exercise, .exam {
+            background-color: white;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+    <script>
+        function showContent(sectionId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Enseignement de la Langue Française</h1>
+    <p>Votre ressource pour apprendre le français de manière interactive et motivante</p>
+</header>
+
+<nav>
+    <a href="#" onclick="showContent('videos')">Vidéos Éducatives</a>
+    <a href="#" onclick="showContent('posts')">Grammaire</a>
+    <a href="#" onclick="showContent('posts')">Conjugaison</a>
+    <a href="#" onclick="showContent('posts')">Orthographe</a>
+    <a href="#" onclick="showContent('posts')">Vocabulaire</a>
+    <a href="#" onclick="showContent('posts')">Lecture compréhension</a>
+    <a href="#" onclick="showContent('resources')">Ressources</a>
+</nav>
+
+<div class="container">
+    <section id="videos" class="content active">
+        <h2>Vidéos Éducatives</h2>
+        <div class="video">
+            <!-- Exemples de vidéos YouTube intégrées -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FMXby2KV7tU?si=PKkICfPLfNiW9FgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6O48Kz8ovqw?si=0sUeHkJt-LL4YLwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/85KZ8TwVZz0?si=CkOapyivE6Wyq2O5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OXHrWZIPxgE?si=ZnmDG7G7Xay--NGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OXHrWZIPxgE?si=g_0e6G1y1hy1cO4m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/vidéo3" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+    </section>
+    
+    <section id="posts" class="content">
+        <h2>Articles</h2>
+        <div class="posts">
+            <div class="post">
+                <h3>Texte (1) </h3>
+                <p> Le soutien des frères et sœur </p>
+            <a href="pdf/article1.pdf" download>Télécharger l'article en PDF</a>
+        </div>
+        <div class="post">
+            <h3>Les Meilleurs Livres pour Apprendre le Français</h3>
+            <p>Découvrez une sélection des meilleurs livres pour apprendre le français à tous les niveaux...</p>
+            <a href=" pdf /article2.pdf" download>Télécharger l'article en PDF</a>
+        </div>
+
+            </div>
+            <div class="post">
+                <h3>Texte (2)</h3>
+                <p>La réunion de famille surprise</p>
+<a href=" pdf /article1.pdf" download>Télécharger l'article en PDF</a>
+        </div>
+        <div class="post">
+            <h3>Les Meilleurs Livres pour Apprendre le Français</h3>
+            <p>Découvrez une sélection des meilleurs livres pour apprendre le français à tous les niveaux...</p>
+            <a href=" pdf /article2.pdf" download>Télécharger l'article en PDF</a>
+        </div>
+
+            </div>
+            <div class="post">
+                <h3>Texte (3)</h3>
+                <p>La journée de nettoyage</p>
+<a href=" pdf /article1.pdf" download>Télécharger l'article en PDF</a>
+        </div>
+        <div class="post">
+            <h3>Les Meilleurs Livres pour Apprendre le Français</h3>
+            <p>Découvrez une sélection des meilleurs livres pour apprendre le français à tous les niveaux...</p>
+            <a href=" pdf /article2.pdf" download>Télécharger l'article en PDF</a>
+        </div>
+
+            </div>
+
+            <!-- Ajoutez plus d'articles ici -->
+        </div>
+    </section>
+    
+    <section id="exercises" class="content">
+        <h2>Exercices Interactifs</h2>
+        <div class="exercises">
+            <div class="exercise">
+                <h3>Exercice 1</h3>
+                <p>Je décompose les phrases en Sujet  -  verbe  et  complément. </p>
+<a href=" pdf /exercise1.pdf" download>Télécharger l'exercice en PDF</a>
+        </div>
+        <div class="exercise">
+            <h3>Compréhension Écrite</h3>
+            <p>Lisez le texte et répondez aux questions qui suivent pour tester votre compréhension...</p>
+            <a href=" pdf /exercise2.pdf" download>Télécharger l'exercice en PDF</a>
+        </div>
+
+            </div>
+            <div class="exercise">
+                <h3>Exercice 2</h3>
+                <p> Je décompose les phrases en Sujet  -  verbe  et  complément. </p>
+<a href=" pdf /exercise1.pdf" download>Télécharger l'exercice en PDF</a>
+        </div>
+        <div class="exercise">
+            <h3>Compréhension Écrite</h3>
+            <p>Lisez le texte et répondez aux questions qui suivent pour tester votre compréhension...</p>
+            <a href=" pdf /exercise2.pdf" download>Télécharger l'exercice en PDF</a>
+        </div>
+
+            </div>
+            <div class="exercise">
+                <h3>Exercice 3</h3>
+                <p> Je décompose les phrases en Sujet  -  verbe  et  complément. </p>
+<a href=" pdf /exercise1.pdf" download>Télécharger l'exercice en PDF</a>
+        </div>
+        <div class="exercise">
+            <h3>Compréhension Écrite</h3>
+            <p>Lisez le texte et répondez aux questions qui suivent pour tester votre compréhension...</p>
+            <a href=" pdf /exercise2.pdf" download>Télécharger l'exercice en PDF</a>
+        </div>
+
+            </div>
+
+            <!-- Ajoutez plus d'exercices ici -->
+        </div>
+    </section>
+    
+    <section id="exams" class="content">
+        <h2>Examens</h2>
+        <div class="exams">
+            <div class="exam">
+                <h3>Examen 1</h3>
+                <p>Description de l'examen 1...</p>
+            </div>
+            <div class="exam">
+                <h3>Examen 2</h3>
+                <p>Description de l'examen 2...</p>
+            </div>
+            <!-- Ajoutez plus d'examens ici -->
+        </div>
+    </section>
+    
+    <section id="resources" class="content">
+        <h2>Ressources Pédagogiques</h2>
+        <p>Liste de ressources pédagogiques supplémentaires...</p>
+    </section>
+</div>
+
+</body>
+</html>
